@@ -1,0 +1,213 @@
+* {
+    margin: 0 0;
+    color: #60606e;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+header p {
+    margin: 2em 2em;
+}
+h2 span {
+    position: relative;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #7beec7 50%);
+}
+h2 span:after {
+    content: attr(data-content);
+    position: absolute;
+    /*color: #000;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(253, 255, 255, 0.08);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 0.5fr 0.5fr 0.5fr 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: repeat(2, 1fr) 0.5fr 0.5fr 0.5fr 0.5fr 0.25fr 0.25fr 0.25fr 0.25fr 0.5fr;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+.grid2 {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+.grid2 > div {
+    text-align: center;
+}
+.card1 {
+    /*padding-left: 3em;*/
+    grid-column: 2/5;
+    grid-row: 1/2;
+}
+.card2 {
+    /*padding-left: 3em;*/
+    grid-column: 5/8;
+    grid-row: 1/2;
+}
+.card3 {
+    /*padding-left: 3em;*/
+    grid-column: 2/5;
+    grid-row: 2/3;
+}
+.card4 {
+    /*padding-left: 3em;*/
+    grid-column: 5/8;
+    grid-row: 2/3;
+}
+
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p,
+.card4 i {
+    text-align: left;
+}
+.card1 h3,
+.card2 h3,
+.card3 h3,
+.card4 h3 {
+    text-align: left;
+    padding-bottom: 1em;
+}
+.card5 {
+    padding-left: 3em;
+    grid-column: 8/13;
+    grid-row: 1/3;
+}
+
+.white-color {
+    background-color: white;
+    grid-column: 1/10;
+    grid-row: 8/9;
+    z-index: -10;
+}
+.img {
+    background-image: url(../img/site-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    grid-column: 1/10;
+    grid-row: 1/9;
+    z-index: -10;
+}
+.smallImg {
+    grid-column: 2/4;
+    grid-row: 5/11;
+    z-index: -9;
+}
+.smallImg img {
+    height: 100%;
+}
+.container {
+    max-width: 1200px; /*=1200px*/
+    /*Выравниваем по центру*/
+    margin: 0 auto;
+    position: relative;
+}
+.title h2 {
+    padding-bottom: 1em;
+}
+.title {
+    display: block;
+    text-align: center;
+    /*background-color: rebeccapurple;*/
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+.title > div {
+    margin: 0 auto;
+    max-width: 750px; /*=1200px*/
+}
+.button_header {
+    justify-content: center;
+    grid-column: 8/9;
+    grid-row: 8/10;
+    height: 75%;
+    align-items: center;
+    margin: 0;
+    background: #7beec7;
+    border: none;
+    display: inline-block;
+}
+.header_bold_text:before {
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    content: "WE`RE";
+    size: 1.5em;
+    background: #7beec7;
+    padding-top: 0.3em;
+    padding-bottom: 0.2em;
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+}
+.header_bold_text:after {
+    display: block;
+    text-align: center;
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, consectetur adipisicing elit.Lorem ipsum dolor sit amet";
+    margin-top: 1em;
+}
+.header_bold_text {
+    size: 0.3em;
+    grid-row: 2/4;
+    grid-column: 3/7;
+    text-align: center;
+    /*margin-top: 10em;*/
+    /*max-width: 33em;*/
+    margin: 0.5em;
+    /*padding: 6px;*/
+    display: block;
+    font-family: Montserrat, monospace;
+    /*margin-top: 6em;*/
+    /*margin-bottom: 4.7em;*/
+}
+.header_bold_text h1 {
+    font-weight: bold;
+    border: 8px solid #60606e;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+    display: block;
+    size: 3em;
+}
+.index-header {
+    text-align: center;
+    width: 100%;
+    height: 80vh; /*высота занимает 100% высоты экрана */
+    background-image: url(../img/site-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 8em;
+}
+.textRight {
+    grid-column: 5/9;
+    grid-row: 5/9;
+    /*padding-left: 5em;*/
+    text-align: left;
+    /*position: relative;*/
+}
+.textRight h2 {
+    margin: 0.5em 1.5em;
+}
+.relTiv {
+    position: absolute;
+    bottom: -80px;
+    left: 25%;
+    /*left: 10vw;*/
+}
+
+@media screen and (min-width: 320px) and (max-width: 765px) {
+    .relTiv {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        /*left: 10vw;*/
+    }
+}
