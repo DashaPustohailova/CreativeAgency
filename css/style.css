@@ -84,7 +84,7 @@ h2 span:after {
     background-color: white;
     grid-column: 1/10;
     grid-row: 8/9;
-    z-index: -10;
+    z-index: -9;
 }
 .img {
     background-image: url(../img/site-hero.jpg);
