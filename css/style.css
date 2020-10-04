@@ -184,7 +184,7 @@ h2 span:after {
     background-position: center;
     background-size: cover;
     position: relative;
-    margin-bottom: 8em;
+    margin-bottom: 7em;
 }
 .textRight {
     grid-column: 5/9;
