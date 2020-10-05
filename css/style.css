@@ -429,7 +429,7 @@ input {
 @media (max-width: 1250px) {
     .mobile-nav__title,
     .mobile-nav__link {
-        /* margin-left: 35%; */
+        margin-left: 25%;
         display: block;
         text-align: center;
         text-decoration: none;
