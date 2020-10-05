@@ -429,9 +429,9 @@ input {
 @media (max-width: 1250px) {
     .mobile-nav__title,
     .mobile-nav__link {
-        margin-left: 35%;
+        /* margin-left: 35%; */
         display: block;
-        text-align: left;
+        text-align: center;
         text-decoration: none;
         font-weight: 600;
         font-size: 22px;
@@ -450,5 +450,15 @@ input {
 
     .vertical_center {
         margin-top: 30%;
+    }
+}
+
+@media (max-width: 650px) {
+    .mobile-nav__title {
+        font-size: 2em;
+    }
+
+    .mobile-nav__link {
+        font-size: 1em;
     }
 }
