@@ -30,6 +30,10 @@ h2 span:after {
     height: 50%;
     background-color: rgba(253, 255, 255, 0.08);
 }
+
+.img_sm {
+    display: none;
+}
 .grid {
     position: relative;
     overflow: hidden;
@@ -383,6 +387,33 @@ input {
         padding-right: 0.1em;
         border: 5px solid #60606e;
         margin: 0em 1em;
+    }
+
+    .card5 {
+        display: none;
+    }
+    .card1,
+    .card3 {
+        margin-bottom: 2em;
+        margin-left: 1em;
+        grid-column: 1/7;
+    }
+
+    .card2,
+    .card4 {
+        margin-bottom: 2em;
+        margin-left: 1em;
+        grid-column: 7/14;
+    }
+
+    .title {
+        padding-bottom: 3em;
+    }
+    .img_sm {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 3em;
+        display: block;
     }
     .header_bold_text {
         size: 0.7em;
