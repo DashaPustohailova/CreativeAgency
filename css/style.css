@@ -425,3 +425,30 @@ input {
         margin: 1em 1.3em;
     }
 }
+
+@media (max-width: 1250px) {
+    .mobile-nav__title,
+    .mobile-nav__link {
+        margin-left: 35%;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 22px;
+    }
+    .mobile-nav {
+        position: absolute;
+    }
+
+    .mobile-nav__title {
+        font-size: 3em;
+    }
+
+    .mobile-nav__link {
+        font-size: 2em;
+    }
+
+    .vertical_center {
+        margin-top: 30%;
+    }
+}
