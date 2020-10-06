@@ -460,7 +460,7 @@ input {
     }
 
     .vertical_center {
-        padding-top: 4em;
+        padding-top: 2em;
         padding-left: 3em;
         /* min-height: 100vh; */
     }
@@ -472,5 +472,13 @@ input {
     .mobile-nav__link {
         font-size: 1em;
         vertical-align: middle;
+    }
+}
+
+@media (max-width: 500px) {
+    .vertical_center {
+        padding-top: 6em;
+        padding-left: 4em;
+        /* min-height: 100vh; */
     }
 }
