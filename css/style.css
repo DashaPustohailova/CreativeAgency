@@ -352,7 +352,7 @@ input {
     .mobile-nav {
         right: -140%;
         width: 115%;
-        background-color: rgb(52, 4, 165);
+        background-color: rgb(35, 171, 175);
     }
 
     .header_bold_text {
@@ -455,8 +455,9 @@ input {
     }
 }
 
-@media (max-width: 650px) {
-    .mobile-nav {
+@media (max-width: 497px) {
+    .FIRST {
+        padding-top: 1.3em;
     }
 
     .vertical_center {
@@ -473,12 +474,33 @@ input {
         font-size: 1em;
         vertical-align: middle;
     }
+
+    .vertical_center {
+        font-size: 1.5em;
+    }
 }
 
-@media (min-width: 370px) and (max-width: 500px) {
+@media (min-width: 370px) and (max-width: 675px) {
+    .card1 h3,
+    .card2 h3,
+    .card3 h3,
+    .card4 h3 {
+        text-align: center;
+        /* padding-bottom: 1em; */
+    }
+
+    .card1 p,
+    .card2 p,
+    .card3 p,
+    .card4 p {
+        text-align: center;
+        padding-left: 1.5em;
+        padding-right: 1em;
+    }
+
     .vertical_center {
-        font-size: 0.7em;
-        padding-top: 6em;
+        /* font-size: 0.5em; */
+        padding-top: 4em;
         padding-left: 4em;
         /* min-height: 100vh; */
     }
