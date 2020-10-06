@@ -352,7 +352,7 @@ input {
     .mobile-nav {
         right: -140%;
         width: 115%;
-        background-color: rgb(4, 165, 117);
+        background-color: rgb(52, 4, 165);
     }
 
     .header_bold_text {
@@ -475,8 +475,9 @@ input {
     }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 370px) and (max-width: 500px) {
     .vertical_center {
+        font-size: 0.7em;
         padding-top: 6em;
         padding-left: 4em;
         /* min-height: 100vh; */
