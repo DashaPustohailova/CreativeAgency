@@ -429,16 +429,17 @@ input {
 @media (max-width: 1250px) {
     .mobile-nav__title,
     .mobile-nav__link {
-        margin-left: 25%;
+        /* margin-left: 25%; */
         display: block;
         text-align: center;
         text-decoration: none;
         font-weight: 600;
         font-size: 22px;
     }
-    .mobile-nav {
+    /* .mobile-nav {
         position: absolute;
-    }
+        height: 100vh;
+    } */
 
     .mobile-nav__title {
         font-size: 3em;
@@ -449,16 +450,27 @@ input {
     }
 
     .vertical_center {
-        margin-top: 30%;
+        position: relative;
+        /* margin-top: 30%; */
     }
 }
 
 @media (max-width: 650px) {
+    .mobile-nav {
+    }
+
+    .vertical_center {
+        padding-top: 4em;
+        padding-left: 3em;
+        /* min-height: 100vh; */
+    }
     .mobile-nav__title {
         font-size: 2em;
+        vertical-align: middle;
     }
 
     .mobile-nav__link {
         font-size: 1em;
+        vertical-align: middle;
     }
 }
