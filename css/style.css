@@ -352,7 +352,7 @@ input {
     .mobile-nav {
         right: -140%;
         width: 115%;
-        background-color: rgb(35, 171, 175);
+        background-color: rgb(32, 149, 153);
     }
 
     .header_bold_text {
@@ -461,7 +461,7 @@ input {
     }
 
     .vertical_center {
-        padding-top: 2em;
+        padding-top: 4em;
         padding-left: 3em;
         /* min-height: 100vh; */
     }
@@ -499,9 +499,19 @@ input {
     }
 
     .vertical_center {
-        /* font-size: 0.5em; */
+        font-size: 0.5em;
         padding-top: 4em;
         padding-left: 4em;
         /* min-height: 100vh; */
+    }
+
+    .mobile-nav__title {
+        padding-left: 1em;
+    }
+}
+
+@media (min-width: 497px) and (max-width: 697) {
+    .vertical_center {
+        font-size: 0.7em;
     }
 }
